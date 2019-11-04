@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder - Survey</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3f7d57fead.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="header__logo-box">
+                <a href="/home">
+                    <i class="fas fa-user-friends header__logo"></i>
+                </a>
+            </div>
+
+            <div class="header__text-box u-margin-bottom-medium">
+                <h1 class="heading-primary heading-primary--main">
+                    Friend Finder
+                </h1>
+
+            </div>
+        </header>
+
+        <section class="survey-section">
+            <form class="survey-form">
+                <h1>Matchmaker Survey</h1>
+                <h3>Take the survey and find out who your next best friend should be!</h3>
+                <hr>
+
+                <h2>About You</h2>
+                <label for="name">Your Name (required)</label>
+                <input class="form-control form-control-lg" type="text" placeholder="Your Name" id="name">
+                <label for="photo">Link to Your Photo (required)</label>
+                <input class="form-control form-control-lg" type="text" placeholder="URL to your photo" id="photo">
+
+                <hr>
+                <div class="questions-div">
+                    <p><strong>Q1</strong>: You're always the first person on the dance floor.</p>
+                    <label>
+                        <select class="survey-answer" id="q1">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+
+                    <p><strong>Q2</strong>: You love animals (maybe more than people)</p>
+                    <label>
+                        <select class="survey-answer" id="q2">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+
+                    <p><strong>Q3</strong>: You like to shop for vinyl records</p>
+                    <label>
+                        <select class="survey-answer" id="q3">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+
+                    <p><strong>Q4</strong>: You would rather cook at home than order out</p>
+                    <label>
+                        <select class="survey-answer" id="q4">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+
+                    <p><strong>Q5</strong>: You like to engage in intellectual debates</p>
+                    <label>
+                        <select class="survey-answer" id="q5">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+
+                    <p><strong>Q6</strong>: Loyalty is the most important quality in a friend</p>
+                    <label>
+                        <select class="survey-answer" id="q6">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+
+                    <p><strong>Q7</strong>: Your perfect vacation is lying by the beach, doing nothing</p>
+                    <label>
+                        <select class="survey-answer" id="q7">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+
+                    <p><strong>Q8</strong>: Brunch is your favorite meal</p>
+                    <label>
+                        <select class="survey-answer" id="q8">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+
+                    <p><strong>Q9</strong>: You love hiking and being outdoors</p>
+                    <label>
+                        <select class="survey-answer" id="q9">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+
+                    <p><strong>Q10</strong>: You believe the quality of your friends is more important than the quantity</p>
+                    <label>
+                        <select class="survey-answer" id="q10">
+                            <option value=""></option>
+                            <option value="1">1 - Strongly Agree</option>
+                            <option value="2">2 - Agree</option>
+                            <option value="3">3 - N/A</option>
+                            <option value="4">4 - Disagree</option>
+                            <option value="5">5 - Strongly Disagree</option>
+                        </select>
+                    </label>
+                </div>
+                <input type="submit">
+            </form>
+
+        </section>
+    </div>
+
+
+    <script src="../data/friends.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

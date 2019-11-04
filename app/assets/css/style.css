@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0 3rem;
+    background-color: #edeae5;
+}
+
+.container {
+    font-size: 1.6rem;
+}
+
+.header {
+    height: 55vh;
+    background-image: linear-gradient(to top, rgba(221, 204, 223, .5), rgba(226, 195, 200, .5)), url(../images/header-img.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    border-bottom: 1rem solid #afafc7;
+}
+
+.header__logo {
+    font-size: 4rem;
+    color: #5f7daf;
+}
+
+.header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    font-family: 'Poller One', cursive;
+    text-transform: uppercase;
+    text-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .4);
+}
+
+.heading-primary--main {
+    display: block;
+    font-size: 8rem;
+    letter-spacing: .5rem;
+}
+
+.heading-primary--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+}
+
+.btn-primary {
+    background-color: #5f7daf;
+    border-color: #5f7daf;
+    ;
+}
+
+.survey-section {
+    background-color: #fff;
+    padding: 1rem;
+}
