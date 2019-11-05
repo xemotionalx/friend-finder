@@ -56,7 +56,7 @@
                     <label>
                         <select class="survey-answer" id="q1">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -68,7 +68,7 @@
                     <label>
                         <select class="survey-answer" id="q2">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -80,7 +80,7 @@
                     <label>
                         <select class="survey-answer" id="q3">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -92,7 +92,7 @@
                     <label>
                         <select class="survey-answer" id="q4">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -104,7 +104,7 @@
                     <label>
                         <select class="survey-answer" id="q5">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -116,7 +116,7 @@
                     <label>
                         <select class="survey-answer" id="q6">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -128,7 +128,7 @@
                     <label>
                         <select class="survey-answer" id="q7">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -140,7 +140,7 @@
                     <label>
                         <select class="survey-answer" id="q8">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -152,7 +152,7 @@
                     <label>
                         <select class="survey-answer" id="q9">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -164,7 +164,7 @@
                     <label>
                         <select class="survey-answer" id="q10">
                             <option value=""></option>
-                            <option value="1">1 - Strongly Agree</option>
+                            <option value="1" selected>1 - Strongly Agree</option>
                             <option value="2">2 - Agree</option>
                             <option value="3">3 - N/A</option>
                             <option value="4">4 - Disagree</option>
@@ -172,18 +172,46 @@
                         </select>
                     </label>
                 </div>
-                <input type="submit">
+                <input type="submit" id="add-friend">
             </form>
 
         </section>
     </div>
 
-
-    <script src="../data/friends.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        document.getElementById("name").defaultValue = "Georgina";
+        document.getElementById("photo").defaultValue = "http://cdn.shopify.com/s/files/1/1525/9766/articles/Spotlight_Georgina_1024x1024.jpg?v=1551849281";
+
+
+        $("#add-friend").on("click", function(event) {
+            event.preventDefault();
+
+            var newScores = [];
+
+            for (i = 1; i < 11; i++) {
+                var score = $("#q" + i).val();
+                newScores.push(score);
+            }
+
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: newScores
+            };
+
+            $.post("/api/friends", newFriend)
+                .then(function(data) {
+                    console.log("survey.html", data);
+                    alert("Adding friend...");
+                });
+        });
+    </script>
+
 </body>
 
 </html>
