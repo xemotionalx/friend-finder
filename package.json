@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "node": "^12.13.0",
     "path": "^0.12.7",
     "tailwindcss": "^1.1.3"
